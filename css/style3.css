@@ -1,0 +1,129 @@
+@media (max-width: 600px) {
+	.header-center h1 {
+		font-size: 50px;
+	}
+	.header-center h2 {
+		font-size: 24px;
+	}
+	.header-center-news h1 {
+		font-size: 50px;
+	}
+	.header-center-news h2 {
+		font-size: 24px;
+	}
+	.navbar-content {
+		top: 97px;
+	}
+	.buy a {
+		font-size: 20px;
+
+		padding: 10px 60px;
+	}
+	.logo p {
+		font-size: 36px;
+	}
+	.logo span {
+		font-size: 20px;
+	}
+	.nav-right {
+		font-size: 20px;
+	}
+	.features article {
+		flex-direction: column;
+		gap: 5px;
+	}
+	footer .logo-two p,
+	footer .logo-two span {
+		font-size: 20px;
+	}
+	.date {
+		gap: 50px;
+	}
+	.news-letter-top {
+		gap: 10px;
+		align-items: center;
+	}
+	.news-letter-top p {
+		font-size: 20px;
+	}
+	.guys {
+		flex-wrap: wrap;
+	}
+	.guys article img {
+		width: 150px;
+	}
+	#map {
+		width: 350px;
+		height: 350px;
+	}
+	.number,
+	.adress,
+	.graffic {
+		gap: 10px;
+	}
+}
+
+@media (max-width: 380px) {
+	.header-center h1 {
+		font-size: 30px;
+	}
+	.header-center h2 {
+		font-size: 20px;
+	}
+	.header-center-news h1 {
+		font-size: 30px;
+	}
+	.header-center-news h2 {
+		font-size: 20px;
+	}
+	.navbar-content {
+		top: 85px;
+	}
+	.logo p {
+		font-size: 28px;
+	}
+	.logo span {
+		font-size: 16px;
+	}
+	.nav-right {
+		font-size: 16px;
+	}
+	.date {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.logo-two {
+		flex-direction: column;
+	}
+	.news-letter-top {
+		display: grid;
+		text-align: center;
+		gap: 10px;
+		align-items: center;
+	}
+	.about-content a {
+		padding: 18px 10px;
+	}
+	.new-1,
+	.new-2,
+	.new-3,
+	.new-4,
+	.new-5,
+	.new-6 {
+		width: 300px;
+	}
+	.reviews .first {
+		display: grid;
+		gap: 30px;
+	}
+	.reviews .first .left {
+		justify-content: center;
+	}
+	.guys {
+		flex-wrap: wrapv;
+	}
+	.guys article img {
+		width: 200px;
+	}
+}

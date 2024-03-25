@@ -1,0 +1,114 @@
+@media (max-width: 1280px) {
+	header,
+	nav,
+	main,
+	footer {
+		max-width: 100%;
+	}
+	nav {
+		gap: 70px;
+	}
+
+	/*-----------------------------------------------------------------------*/
+
+	.knifes-none {
+		display: none;
+	}
+	.catalog-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+			'one two'
+			'one three';
+	}
+	.weapons {
+		grid-area: one;
+	}
+	.cartridges {
+		grid-area: two;
+	}
+	.optics {
+		grid-area: three;
+	}
+	.catalog-grid .img-1 {
+		font-size: 36px;
+		padding: 234px 180px;
+	}
+	.catalog-grid .img-1,
+	.catalog-grid .img-2,
+	.catalog-grid .img-3,
+	.catalog-grid .img-4 {
+		font-size: 36px;
+	}
+
+	/*-----------------------------------------------------------------------*/
+
+	.about-content p {
+		width: 85%;
+	}
+
+	/*-----------------------------------------------------------------------*/
+
+	.news-flex {
+		width: 85%;
+		margin: 0 auto;
+
+		display: flex;
+		flex-direction: column;
+
+		gap: 0;
+	}
+	.news-flex article {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	.news-str {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	/*-----------------------------------------------------------------------*/
+
+	footer nav {
+		width: 85%;
+		margin: 0 auto;
+		column-gap: 250px;
+		row-gap: 50px;
+
+		align-items: center;
+	}
+	footer ul {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.footer-bottom {
+		width: 85%;
+		margin: 50px auto 0;
+	}
+	.date {
+		gap: 150px;
+	}
+	.news-letter-top {
+		display: none;
+	}
+}
+
+/*-----------------------------------------------------------------------*/
+
+@media (max-width: 1080px) {
+	header nav ul {
+		display: none;
+	}
+	.nav-right {
+		display: none;
+	}
+	.navbar {
+		display: block;
+	}
+	.reviews {
+		width: 70%;
+	}
+	.line-about {
+		width: 90%;
+	}
+}

@@ -1,0 +1,970 @@
+* {
+	padding: 0;
+	margin: 0;
+	color: white;
+	font-family: 'Grand';
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+@font-face {
+	font-family: 'Sreda';
+	src: url(../fonts/Sreda-Regular.ttf);
+}
+@font-face {
+	font-family: 'Grand';
+	src: url(../fonts/Grandstander-Regular.ttf);
+}
+body,
+html {
+	margin: 0;
+	padding: 0;
+}
+header,
+main,
+footer {
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(../img/back.png) no-repeat;
+	background-size: cover;
+}
+.news-one header {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(../img/back.png) no-repeat;
+	background-size: cover;
+}
+.buy {
+	display: none;
+	justify-content: center;
+	padding: 150px 0;
+}
+.buy a {
+	padding: 20px 80px;
+	background-color: #68727e;
+
+	text-decoration: none;
+
+	font-size: 28px;
+	font-family: 'Sreda';
+
+	border-radius: 20px;
+
+	transition: 0.3s;
+}
+.header-content {
+	width: 100%;
+	margin: 0 auto;
+}
+nav {
+	width: 75%;
+	margin: 0 auto;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	padding: 20px 0;
+}
+.line-about {
+	border-top: 2px solid black;
+
+	width: 70%;
+	margin: 0 auto;
+}
+.line {
+	border-top: 2px solid white;
+
+	width: 90%;
+	margin: 0 auto;
+}
+.logo p {
+	font-size: 48px;
+}
+.logo span {
+	font-size: 24px;
+}
+nav ul {
+	display: flex;
+	gap: 56px;
+	align-items: center;
+	text-align: center;
+}
+nav ul a {
+	font-size: 24px;
+	text-decoration: none;
+}
+.nav-right {
+	font-size: 24px;
+	text-decoration: none;
+
+	border: 3px solid rgba(0, 0, 0, 0);
+	border-bottom: 3px solid white;
+	border-top: 3px solid white;
+
+	padding: 5px 13px;
+
+	background-color: rgba(0, 0, 0, 0);
+}
+.header-center {
+	text-align: center;
+
+	padding: 335px 0;
+}
+.header-center h1 {
+	font-family: 'Sreda';
+	font-size: 75px;
+	letter-spacing: 15px;
+
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+}
+.header-center h2 {
+	font-size: 36px;
+	font-family: 'Sreda';
+
+	margin-top: 10px;
+}
+.header-center-news {
+	text-align: center;
+
+	padding: 320px 0;
+}
+.header-center-news h1 {
+	font-family: 'Sreda';
+	font-size: 80px;
+	letter-spacing: 15px;
+
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+}
+.header-center-news h2 {
+	font-size: 36px;
+	font-family: 'Sreda';
+
+	margin-top: 5px;
+}
+.navbar {
+	display: none;
+}
+.hamburger-lines {
+	display: grid;
+	align-items: center;
+
+	height: 32px;
+	width: 32px;
+
+	cursor: pointer;
+
+	position: relative;
+}
+.hamburger-lines .line {
+	display: grid;
+	height: 4px;
+	width: 100%;
+	border-radius: 15px;
+	background-color: white;
+	cursor: pointer;
+}
+.menu-items {
+	display: grid;
+	gap: 15px;
+	padding: 30px;
+
+	background-color: rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(5px);
+	border-bottom: 2px solid white;
+
+	text-align: center;
+}
+.menu-items a {
+	color: black;
+	font-weight: bold;
+}
+.navbar-content {
+	width: 100%;
+	height: auto;
+	display: none;
+	position: absolute;
+	right: 0px;
+	top: 113px;
+	z-index: 1;
+	transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/*-----------------------------------------------------------------------*/
+.news-one-text {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(../img/Shturm.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.news-one-text p {
+	font-size: 20px;
+	text-align: center;
+	line-height: 25px;
+
+	width: 70%;
+	margin: 0 auto;
+	padding: 60px 0;
+}
+
+/*-----------------------------------------------------------------------*/
+
+.why-us {
+	background-color: #d9d9d9;
+
+	padding: 100px 0;
+}
+.why-us h2 {
+	font-family: 'Sreda';
+	text-align: center;
+	color: black;
+	font-size: 40px;
+}
+.features {
+	width: 75%;
+	margin: 100px auto 0;
+	gap: 30px;
+
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.features article {
+	text-align: center;
+}
+.features article img {
+	margin-bottom: 40px;
+}
+.features article p {
+	width: 53%;
+	margin: 0 auto;
+	color: black;
+	margin-bottom: 20px;
+
+	font-size: 24px;
+	font-weight: bold;
+}
+.features article span {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 20px;
+}
+
+/*-----------------------------------------------------------------------*/
+
+.catalog {
+	background-color: #5b5c5f;
+}
+.catalog-content {
+	width: 66%;
+	margin: 0 auto;
+
+	padding: 75px 0;
+}
+.catalog-text {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+.catalog-grid a {
+	text-decoration: none;
+}
+.catalog-text h2,
+.catalog-text a {
+	font-weight: normal;
+	font-size: 32px;
+	font-family: 'Sreda';
+	text-decoration: none;
+}
+.catalog-grid {
+	width: 100%;
+	margin: 0 auto;
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+	justify-content: center;
+}
+.catalog-grid .img-1 {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(../img/weapons.png) no-repeat;
+
+	font-size: 48px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.catalog-grid .img-2 {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(../img/catrigdes.png);
+	font-size: 48px;
+	background-size: cover;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.catalog-grid .img-3 {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(../img/knifes.png) no-repeat;
+	font-size: 48px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.catalog-grid .img-4 {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(../img/optics.png) no-repeat;
+	font-size: 48px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.catalog-grid .img-1,
+.catalog-grid .img-2,
+.catalog-grid .img-3,
+.catalog-grid .img-4 {
+	padding: 100px 0;
+	transition: 0.3s ease-in-out;
+
+	background-size: cover;
+	background-position: center;
+}
+
+/*-----------------------------------------------------------------------*/
+
+.news {
+	background-color: #d9d9d9;
+}
+.news-content {
+	width: 75%;
+	margin: 0 auto;
+
+	padding: 75px 0;
+}
+.news-text {
+	width: 75%;
+	margin: 0 auto;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.news-text h2,
+.news-text a {
+	font-weight: normal;
+	font-size: 32px;
+	font-family: 'Sreda';
+	color: black;
+	text-decoration: none;
+}
+.news-flex img {
+	max-width: 100%;
+	height: 100%;
+}
+.news-flex {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+.news-flex article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+	margin-top: 50px;
+	gap: 20px;
+}
+.news-flex article p {
+	color: black;
+	font-size: 20px;
+	line-height: 140%;
+	max-width: 80%;
+}
+.news-str {
+	width: 95%;
+	margin: 0 auto;
+	padding: 20px 0;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	justify-content: center;
+	row-gap: 35px;
+	column-gap: 15px;
+}
+.news-str a {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+	gap: 350px;
+}
+.new-1 {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url(../img/Shturm.jpg) no-repeat;
+}
+.new-2 {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url(../img/Sniper.jpg) no-repeat;
+}
+.new-3 {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url(../img/Tactic.jpg) no-repeat;
+}
+.new-4 {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url(../img/Seminar.jpeg) no-repeat;
+}
+.new-5 {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url(../img/Kinfes.jpg) no-repeat;
+}
+.new-6 {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url(../img/Sale.jpg) no-repeat;
+}
+.new-1,
+.new-2,
+.new-3,
+.new-4,
+.new-5,
+.new-6 {
+	background-size: cover;
+	background-position: center;
+
+	padding: 30px;
+
+	height: 90%;
+}
+.new-1 h1,
+.new-2 h1,
+.new-3 h1,
+.new-4 h1,
+.new-5 h1,
+.new-6 h1 {
+	font-size: 48px;
+}
+
+/*-----------------------------------------------------------------------*/
+
+.about {
+	background-color: #5b5c5f;
+}
+.about-content {
+	width: 75%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 60px 0;
+}
+.about-content h2 {
+	font-size: 40px;
+	font-family: 'Sreda';
+}
+.about-content p {
+	width: 50%;
+	margin: 40px auto;
+
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 20px;
+
+	line-height: 120%;
+}
+.about-str h2,
+.about-str p {
+	color: #5b5c5f;
+}
+.about-content a {
+	padding: 18px 100px;
+
+	border-radius: 50px;
+	background-color: #777777;
+
+	text-decoration: none;
+	font-weight: bold;
+
+	transition: 0.3s;
+}
+.about-text {
+	width: 50%;
+	margin: 50px auto;
+	display: flex;
+	justify-content: space-around;
+	gap: 30px;
+}
+.about-text-content .first {
+	display: grid;
+	gap: 20px;
+}
+.number,
+.adress,
+.graffic {
+	display: flex;
+	align-items: start;
+	gap: 40px;
+}
+.number p,
+.adress p,
+.graffic p,
+.app p {
+	color: black;
+}
+.app-none p {
+	color: black;
+	font-family: 'Sreda';
+	font-size: 24px;
+}
+.app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.app p {
+	font-family: 'Sreda';
+	font-size: 24px;
+}
+.app-none img {
+	max-width: 100%;
+	width: 250px;
+	height: 100%;
+}
+.app img {
+	max-width: 100%;
+	width: 250px;
+	height: 100%;
+}
+.app-none {
+	display: none;
+}
+.number span,
+.adress span,
+.graffic span {
+	color: black;
+}
+.graffic span {
+	color: black;
+	font-weight: bold;
+}
+.number img,
+.adress img,
+.graffic img {
+	width: 30px;
+}
+.man-about-company {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+
+	width: 50%;
+	margin: 50px auto;
+}
+.man-about-company p {
+	color: #5b5c5f;
+	font-size: 20px;
+}
+.man-about-company img {
+	width: 600px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+/*-----------------------------------------------------------------------*/
+
+footer {
+	background-color: #d9d9d9;
+
+	padding: 30px 0;
+}
+footer .logo p,
+footer .logo span {
+	color: black;
+}
+footer .logo-two {
+	display: none;
+}
+footer .logo-two p,
+footer .logo-two span {
+	color: black;
+}
+footer a {
+	color: black;
+}
+footer nav {
+	align-items: end;
+}
+.footer-nav {
+	display: none;
+}
+.footer-bottom {
+	width: 66%;
+	margin: 60px auto 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.date-content {
+	margin-top: 50px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 70px;
+}
+.date article {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.date article p {
+	color: black;
+}
+.social {
+	display: flex;
+	gap: 20px;
+}
+.social a {
+	transition: 0.2s;
+}
+.news-letter {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+.news-letter p {
+	color: black;
+	font-size: 28px;
+}
+.letter-text {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+.input {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.input input {
+	width: 98%;
+	padding: 7px;
+	border: 1px solid black;
+	border-radius: 10px;
+
+	color: black;
+}
+.input a {
+	background-color: #828282;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 5px 15px;
+
+	transition: 0.2s;
+
+	display: flex;
+	align-items: center;
+}
+.input img {
+	width: 25px;
+}
+.news-letter-top {
+	display: none;
+}
+
+/*-----------------------------------------------------------------------*/
+
+.leadership {
+	width: 60%;
+	margin: 40px auto;
+}
+.leadership h3 {
+	color: #525252;
+	text-align: center;
+	font-size: 40px;
+	font-family: 'Sreda';
+
+	margin-bottom: 20px;
+}
+.guys {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+.guys article {
+	text-align: center;
+}
+.guys article img {
+	border-radius: 10px;
+	width: 200px;
+}
+.guys article p {
+	color: black;
+	font-size: 28px;
+}
+.guys article span {
+	color: darkred;
+	font-size: 16px;
+}
+#map {
+	width: 400px;
+	height: 400px;
+	border: 2px solid #525252;
+}
+
+/*-----------------------------------------------------------------------*/
+
+.reviews {
+	width: 50%;
+	margin: 40px auto;
+}
+.reviews article {
+	display: grid;
+	gap: 40px;
+}
+.reviews .first {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.reviews .left {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.reviews .right {
+	text-align: center;
+}
+.reviews .right p {
+	color: #999;
+}
+.reviews .left .name-text {
+	display: grid;
+	gap: 10px;
+}
+.reviews .left p {
+	color: black;
+	font-weight: bold;
+	font-size: 28px;
+}
+.reviews .left span {
+	color: #999;
+	font-size: 20px;
+}
+.reviews .left img {
+	width: 100px;
+	border-radius: 50%;
+	border: 5px solid #999;
+}
+.reviews .second {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.second .plus h3,
+.second .minus h3,
+.second .comment h3 {
+	color: black;
+	font-weight: bold;
+	font-size: 24px;
+}
+.second .plus,
+.second .minus,
+.second .comment {
+	display: grid;
+	gap: 8px;
+}
+.second .plus p,
+.second .minus p,
+.second .comment p {
+	color: #999;
+	font-size: 16px;
+}
+.other-reviews {
+	color: black;
+	text-decoration: underline;
+	font-size: 20px;
+
+	width: 40%;
+	margin: 0 auto 40px;
+}
+/*-----------------------------------------------------------------------*/
+
+.feedback {
+	text-align: center;
+	margin: 60px 0;
+}
+#openModal {
+	color: black;
+	font-size: 20px;
+	font-weight: bolder;
+
+	padding: 20px 60px;
+
+	border: 3px solid #999;
+	border-radius: 20px;
+}
+#openModal:hover {
+	background-color: #888;
+}
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+	background-color: #999;
+	margin: 10% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 50%;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	animation-name: modalopen;
+	animation-duration: 0.4s;
+}
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+@keyframes modalopen {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.feedback-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+}
+.feedback-form label {
+	display: block;
+	margin-bottom: 5px;
+}
+.feedback-form input[type='text'],
+.feedback-form input[type='email'],
+.feedback-form textarea {
+	width: 40%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: black;
+}
+.feedback-form button {
+	padding: 15px 40px;
+	background-color: #666;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.feedback-form button:hover {
+	background-color: #888;
+}
+.hidden {
+	display: none;
+}
+
+@media screen and (max-width: 1440px) {
+	.about-text {
+		display: grid;
+	}
+	#map {
+		width: 800px;
+		height: 600px;
+	}
+	.app {
+		display: none;
+	}
+	.app-none {
+		display: block;
+		text-align: center;
+	}
+	.about-text-content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+@media screen and (min-width: 1440px) {
+	nav ul a:hover {
+		text-decoration-line: underline;
+	}
+	.catalog-text a:hover {
+		text-decoration-line: underline;
+	}
+	.catalog-grid .img-1:hover {
+		background: url(../img/weapons.png) no-repeat;
+	}
+	.catalog-grid .img-2:hover {
+		background: url(../img/catrigdes.png) no-repeat;
+	}
+	.catalog-grid .img-3:hover {
+		background: url(../img/knifes.png) no-repeat;
+	}
+	.catalog-grid .img-4:hover {
+		background: url(../img/optics.png) no-repeat;
+	}
+	.catalog-grid .img-1:hover,
+	.catalog-grid .img-2:hover,
+	.catalog-grid .img-3:hover,
+	.catalog-grid .img-4:hover {
+		transform: scale(1.05);
+		color: rgba(0, 0, 0, 0);
+
+		background-size: cover;
+
+		background-position: center;
+	}
+	.news-text a:hover {
+		text-decoration-line: underline;
+	}
+	.news-text a:hover {
+		text-decoration-line: underline;
+	}
+	.about-content a:hover {
+		background-color: white;
+		color: #777777;
+	}
+	.social a:hover {
+		transform: scale(1.2);
+	}
+	.input a:hover {
+		padding: 5px 25px;
+		background-color: #525252;
+	}
+}
